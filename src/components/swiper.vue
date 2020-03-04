@@ -1,7 +1,7 @@
 <template>
 	<view class="uni-swiper">
-		<swiper class="swiper-box" @change="change" :autoplay="autoplay" :circular="circular" :interval="interval" :duration="duration">
-			<swiper-item v-for="(item, index) in imageArr" :key="index">
+		<swiper class="swiper-box" @change="change"  :autoplay="autoplay" :circular="circular" :interval="interval" :duration="duration">
+			<swiper-item v-for="(item, index) in imageArr" :key="index" @click="click(item)">
 				<view class="swiper-item"><image class="image" :src="item.url" mode="aspectFill"></image></view>
 			</swiper-item>
 		</swiper>
@@ -92,6 +92,9 @@ export default {
 		this.dots = Object.assign({}, this.dots, this.dotsStyles);
 	},
 	methods: {
+		click(item){
+			this.$emit('click', item)
+		},
 		change(e) {
 			this.current = e.detail.current;
 		}
@@ -119,9 +122,9 @@ export default {
 		align-items: center;
 		.swiper-dot-style{
 			margin-right: 20rpx;
-		&.swiper-dot-circular {
-			border-radius: 50%;
-		}
+			&.swiper-dot-circular {
+				border-radius: 50%;
+			}
 		}
 	}
 }

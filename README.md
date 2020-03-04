@@ -14,7 +14,7 @@ import jmhc-swiper from "jmhc-swiper"
 使用组件
 
 ```
-<jmhc-swiper :imageArr='imageArr' :dotsStyles='dotsStyles' :autoplay="true" :circular="false" :mode='mode'></jmhc-swiper>
+<jmhc-swiper :imageArr='imageArr' :dotsStyles='dotsStyles' :autoplay="true" :circular="false" :mode='mode' @click="click"></jmhc-swiper>
 ```
 
 ```
@@ -67,4 +67,10 @@ dotsStyles 属性说明：
 |        color         | Color  | ‘white’ |        文字颜色        |
 |    indicatorColor    | Color  | ‘black’ |       指示点颜色       |
 | indicatorActiveColor | Color  | ‘white’ |   当前选中指示点颜色   |
+
+### 方法
+
+| 方法名 |       说明       |     参数      |
+| :----: | :--------------: | :-----------: |
+| click  | 点击图片触发事件 | 当前value对象 |
 
