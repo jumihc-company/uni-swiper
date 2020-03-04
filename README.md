@@ -7,16 +7,14 @@
 引用组件
 
 ```
-import liuSwiper from "@/components/liu_swiper.vue"
-export default {
-    components: {liuSwiper}
-}
+npm install jmhc-swiper
+import jmhc-swiper from "jmhc-swiper"
 ```
 
 使用组件
 
 ```
-<liu-swiper :imageArr='imageArr' :dotsStyles='dotsStyles' :autoplay="true" :circular="false" :mode='mode'></liu-swiper>
+<jmhc-swiper :imageArr='imageArr' :dotsStyles='dotsStyles' :autoplay="true" :circular="false" :mode='mode'></jmhc-swiper>
 ```
 
 ```
