@@ -17,7 +17,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"@dcloudio/uni-app-plus": "^2.0.0-26120200226001",
-		"@dcloudio/uni-h5": "^2.0.0-26120200226001",
+		"@dcloudio/uni-h5": "^2.0.0-26120200226001"
 	},
 	"browserslist": [
 		"Android >= 4",
