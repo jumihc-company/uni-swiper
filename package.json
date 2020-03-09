@@ -2,7 +2,7 @@
 	"name": "jmhc-swiper",
 	"version": "0.1.0",
 	"description": "A simple roving diagram component based on uniapp",
-	"main": "main.js",
+	"main": "src/index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/jumihc-company/uni-swiper.git"
@@ -14,12 +14,19 @@
 	],
 	"author": "jumihc",
 	"license": "MIT",
+	"files": [
+		"dist"
+	],
 	"dependencies": {
 		"@dcloudio/uni-app-plus": "^2.0.0-26120200226001",
-		"@dcloudio/uni-h5": "^2.0.0-26120200226001"
+		"@dcloudio/uni-h5": "^2.0.0-26120200226001",
+		"yarn": "^1.22.1"
 	},
 	"browserslist": [
 		"Android >= 4",
 		"ios >= 8"
-	]
+	],
+	"devDependencies": {
+		"bili": "^4.8.1"
+	}
 }
