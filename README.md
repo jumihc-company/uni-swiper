@@ -8,7 +8,8 @@
 
 ```
 npm install jmhc-swiper
-import jmhc-swiper from "jmhc-swiper"
+import jmhcSwiper from "jmhc-swiper"
+Vue.use(jmhcSwiper)
 ```
 
 使用组件

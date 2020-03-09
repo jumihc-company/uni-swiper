@@ -9,4 +9,4 @@ const swiper = {
 if (typeof window !== 'undefined' && window.Vue) { 
     window.Vue.use(swiper) 
 }
-export default  swiper
+export default swiper
