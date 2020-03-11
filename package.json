@@ -1,6 +1,6 @@
 {
 	"name": "jmhc-swiper",
-	"version": "0.1.0",
+	"version": "0.1.4",
 	"description": "A simple roving swiper component based on uniapp",
 	"main": "index.js",
 	"repository": {
